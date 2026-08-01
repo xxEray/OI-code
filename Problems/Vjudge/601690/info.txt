@@ -1,0 +1,21 @@
+https://vjudge.net/contest/601690
+
+|AC|     A     Gym 101201L     Windy Path
+|AC|     B     Gym 101242J     Spin Doctor
+|AC|     C     Gym 101806U     United States of Eurasia
+|AC|     D     Gym 101309J     Jungle Outpost
+|  |     E     Gym 104160K     Security at Museums
+|AC|     F     Gym 104252G     Gravitational Wave Detector
+|AC|     G     Gym 101237J     Dividing Area
+|AC|     H     Gym 102136C     Kingdom Partition
+|AC|     I     Gym 102428D     Dazzling stars
+|AC|     J     Gym 100417I     Roof Skeleton
+|AC|     K     Gym 100633E     Pea-City
+|AC|     L     Gym 100800H     Sunlight
+|AC|     M     Gym 102460L     Largest Quadrilateral
+|AC|     N     Gym 100958G     Snake
+|AC|     O     Gym 101635K     Blowing Candles
+|  |     P     Gym 100520K     Kabbalah for Two
+|AC|     Q     Gym 102896G     Geometrical Combinatorics
+|AC|     R     Gym 101471A     Airport Construction
+|AC|     S     Gym 100960F     The Jedi Killer

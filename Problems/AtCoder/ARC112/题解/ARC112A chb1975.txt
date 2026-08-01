@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+#define rep(i,n) for ((i)=1;(i)<=(n);(i)++)
+using namespace std;
+long long t,l,r;
+int main(){
+	cin>>t;
+	while(t--){
+		cin>>l>>r;
+		long long a=max(0ll,r-l-l+1);
+		cout<<a*(a+1)/2<<endl;
+	}
+	return 0;
+}

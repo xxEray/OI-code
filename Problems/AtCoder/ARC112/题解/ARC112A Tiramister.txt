@@ -1,0 +1,29 @@
+#line 1 "main.cpp"
+#include <iostream>
+
+using namespace std;
+using lint = long long;
+
+void solve() {
+    lint l, r;
+    cin >> l >> r;
+
+    if (r - l < l) {
+        cout << "0\n";
+    } else {
+        cout << (r - l * 2 + 1) * (r - l + 1) -
+                    ((r - l) * (r - l + 1) - l * (l - 1)) / 2
+             << "\n";
+    }
+}
+
+int main() {
+    cin.tie(nullptr);
+    ios::sync_with_stdio(false);
+
+    int q;
+    cin >> q;
+    while (q--) solve();
+
+    return 0;
+}

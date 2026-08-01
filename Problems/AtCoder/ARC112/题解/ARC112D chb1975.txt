@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#define rep(i,n) for ((i)=1;(i)<=(n);(i)++)
+using namespace std;
+int n,m,i,j;
+int fa[2005];
+set<int> s1,s2;
+int fnd(int x){
+	if(fa[x]==x) return x;
+	return fa[x]=fnd(fa[x]);
+}
+void merge(int x,int y){
+	fa[fnd(x)]=fnd(y);
+}
+int main(){
+	scanf("%d%d",&n,&m);
+	rep(i,n+m) fa[i]=i;
+	merge(1,n);merge(1,n+1);merge(1,n+m);
+	rep(i,n)rep(j,m){
+		char c;
+		while((c=getchar())!='.'&&c!='#');
+		if(c=='#') merge(i,n+j);
+	}
+	rep(i,n) s1.insert(fnd(i));
+	rep(i,m) s2.insert(fnd(i+n));
+	cout<<min(s1.size(),s2.size())-1<<endl;
+	return 0;
+}
