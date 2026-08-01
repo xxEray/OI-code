@@ -1,0 +1,5 @@
+{
+    "code-runner.executorMap": {
+		"cpp": "start-process -filepath \"D:\\Soft\\VSCode\\CodeRunner\\C++Runner\" -argumentlist \"\"$fullFileName\"\" ; exit 0",
+	},
+}

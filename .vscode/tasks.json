@@ -1,0 +1,115 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile (Windows)",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-g",
+                "-Wall",
+                "--no-inline",
+                "-Wl,--stack=102400000",
+                "-std=c++17",
+                "-fexec-charset=GBK",
+                "-DDEBUG"
+            ],
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compile (Windows, O2)",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-g",
+                "-Wall",
+                "--no-inline",
+                "-Wl,--stack=102400000",
+                "-std=c++17",
+                "-fexec-charset=GBK",
+                "-DDEBUG",
+                "-O2"
+            ],
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compile (Linux)",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-g",
+                "-Wall",
+                "--no-inline",
+                "-Wl,-z,stack-size=102400000",
+                "-std=c++17",
+                "-fexec-charset=GBK",
+                "-DDEBUG"
+            ],
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compile (Linux, O2)",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-g",
+                "-Wall",
+                "--no-inline",
+                "-Wl,-z,stack-size=102400000",
+                "-std=c++17",
+                "-fexec-charset=GBK",
+                "-DDEBUG",
+                "-O2"
+            ],
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+    ]
+}
