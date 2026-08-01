@@ -1,0 +1,1 @@
+g++ std.cpp -o std -O2 -Wl,--stack=1024000000 -std=c++14

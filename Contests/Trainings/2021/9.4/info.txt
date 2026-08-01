@@ -1,0 +1,3 @@
+stone  CatOJ 1003
+memory CatOJ 1004
+subset CatOJ 1005
