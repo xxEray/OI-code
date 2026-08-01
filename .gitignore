@@ -1,0 +1,28 @@
+# vscode config folder
+.vscode
+
+# execution files
+*.exe
+
+# temporary data files
+*.in
+*.out
+*.ans
+in
+out
+ans
+data
+in.txt
+out.txt
+ans.txt
+data.txt
+
+# temporary data folders & data samples
+*data/
+*down/
+*hack/
+
+# common large files
+*.zip
+*.7z
+*.tar.gz
