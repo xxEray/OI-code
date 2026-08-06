@@ -1,8 +1,8 @@
 #include <cstdio>
 namespace FIO {
 	const int D = 1 << 23;
-	char in[D], *I = in + D, out[D], *O = out;
-	char rdc() { return (I == in + D ? fread(I = in, 1, D, stdin) : 0), *I++; }
+	char in[D], *I = in, *Iend = in, out[D], *O = out;
+	char rdc() { return (I == Iend ? Iend = in + fread(I = in, 1, D, stdin) : 0), (I == Iend ? EOF : *I++); }
 	template<typename T> void read(T &x) {
 		char c = rdc(), fl = 0;
 		while(c < '0' || c > '9') fl |= (c == '-'), c = rdc();
