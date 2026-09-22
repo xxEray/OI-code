@@ -26,3 +26,6 @@ data.txt
 *.zip
 *.7z
 *.tar.gz
+
+# Kilo files
+.kilo
